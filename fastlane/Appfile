@@ -1,0 +1,2 @@
+json_key_file("") # Path to service account JSON (for Play Store)
+package_name("com.flicktv.blinkit_money")

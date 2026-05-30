@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Gold wallet body -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M20,40 C20,27 27,20 40,20 L68,20 C81,20 88,27 88,40 L88,80 C88,93 81,100 68,100 L40,100 C27,100 20,93 20,80 Z"/>
+
+    <!-- Lighter gold highlight at top-left for 3-D depth -->
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M20,40 C20,27 27,20 40,20 L68,20 C81,20 88,27 88,40 L46,40 Z"/>
+
+    <!-- Dark green flap (full width, straight bottom) -->
+    <path
+        android:fillColor="#2E5018"
+        android:pathData="M36,20 L72,20 C82,20 87,28 88,36 L20,36 C21,28 26,20 36,20 Z"/>
+
+    <!-- Flap clasp oval -->
+    <path
+        android:fillColor="#0F2008"
+        android:pathData="M47,25 C47,22 50,20.5 54,20.5 C58,20.5 61,22 61,25 C61,28 58,29.5 54,29.5 C50,29.5 47,28 47,25 Z"/>
+
+    <!-- ₹ vertical bar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,52 L48,52 L48,84 L44,84 Z"/>
+
+    <!-- ₹ top horizontal bar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,52 L66,52 L66,56 L44,56 Z"/>
+
+    <!-- ₹ second horizontal bar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,61 L64,61 L64,65 L44,65 Z"/>
+
+    <!-- ₹ diagonal slash from second bar to bottom-right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,65 L48,69 L66,84 L61,84 L44,69 L44,65 Z"/>
+</vector>

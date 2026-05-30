@@ -1,0 +1,42 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    # Style
+    prefer_single_quotes: true
+    always_use_package_imports: true
+
+    # Flutter / widgets
+    sort_child_properties_last: true
+    avoid_unnecessary_containers: true
+    sized_box_for_whitespace: true
+    use_colored_box: true
+    use_decorated_box: true
+
+    # Performance
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+
+    # Dart idioms
+    use_super_parameters: true
+    unnecessary_string_interpolations: true
+    unnecessary_this: true
+    unnecessary_new: true
+    unnecessary_const: true
+    avoid_redundant_argument_values: true
+    prefer_final_locals: true
+    prefer_final_in_for_each: true
+
+    # Safety
+    avoid_print: true
+    cancel_subscriptions: true
+    close_sinks: true
+    unawaited_futures: true

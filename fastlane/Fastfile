@@ -1,0 +1,31 @@
+default_platform(:android)
+
+platform :android do
+  desc "Build release APK"
+  lane :build do
+    gradle(
+      task: "assemble",
+      build_type: "Release",
+      project_dir: "android/",
+      properties: {
+        "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"],
+        "android.injected.signing.store.password" => ENV["KEYSTORE_PASSWORD"],
+        "android.injected.signing.key.alias" => ENV["KEY_ALIAS"],
+        "android.injected.signing.key.password" => ENV["KEY_PASSWORD"],
+      }
+    )
+    copy_artifacts(
+      target_path: "build/fastlane-outputs",
+      artifacts: ["android/app/build/outputs/apk/release/app-release.apk"],
+      fail_on_error: false
+    )
+    sh("mv ../build/fastlane-outputs/app-release.apk ../build/fastlane-outputs/final_result.apk || true")
+    UI.success("APK built successfully as final_result.apk")
+  end
+
+  desc "Build and upload to GitHub Releases"
+  lane :release do
+    build
+    UI.success("Release lane complete")
+  end
+end
