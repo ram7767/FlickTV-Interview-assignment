@@ -1,30 +1,33 @@
-# FlickTV Money Wallet
+# Ram — FlickTV Assignment
 
-A Flutter wallet UI assignment built for FlickTV.
+**Package:** `flicktv.ram` &nbsp;·&nbsp; **App name:** `Ram` &nbsp;·&nbsp; **Version:** `1.0.0`
 
-## Tech Stack
-
-- **Flutter** (Dart) — UI framework
-- **Clean Architecture** — Domain / Data / Presentation layers
-- **CustomPainter** — Confetti animation, custom UI components
-- **Flutter Lints** — Code quality
-
-No third-party packages used — built entirely with Flutter SDK.
-
-## Features
-
-- Splash Screen with hero animation
-- Wallet screen animation, animated list, and custom header app bar
+---
 
 ## Download APK
 
-[Download latest release APK](https://github.com/ram7767/FlickTV-Interview-assignment/releases/latest/download/final_result.apk)
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/ram7767/FlickTV-Interview-assignment/releases/latest/download/final_result.apk)
 
-## Video Recording
+---
 
-https://drive.google.com/file/d/1fZNePiPdH6c7dGsyiTTEZdUQFGSJ7d-8/view?usp=sharing
+## Screen Recording
 
-## Run
+> Click the thumbnail to watch the demo
+
+[![Watch Demo](https://drive.google.com/thumbnail?id=1fwuADgYPL8H0oOu487JM97v66eipsdOz&sz=w800)](https://drive.google.com/file/d/1fwuADgYPL8H0oOu487JM97v66eipsdOz/view?usp=sharing)
+
+---
+
+## Tech Stack
+
+- **Flutter / Dart** — no third-party packages used
+- **Clean Architecture** — Domain → Data → Presentation
+- **CustomPainter** — confetti animation & custom UI components
+- **Animations** — hero transitions, animated lists, custom app bar
+
+---
+
+## Run Locally
 
 ```bash
 flutter pub get
