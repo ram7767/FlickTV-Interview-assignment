@@ -27,19 +27,19 @@ jobs:
         run: flutter pub get
 
       - name: Build release APK
-        run: flutter build apk --release --obfuscate --split-debug-info=build/debug-info
+        run: flutter build apk --release
 
       - name: Rename APK
         run: cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/final_result.apk
 
       - name: Get version from pubspec
-        run: echo "VERSION=$(grep 'version:' pubspec.yaml | head -1 | awk '{print $2}')" >> $GITHUB_ENV
+        run: echo "VERSION=$(grep 'version:' pubspec.yaml | head -1 | awk '{print $2}' | cut -d'+' -f1)" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ env.VERSION }}-${{ github.run_number }}
-          name: Blinkit Money v${{ env.VERSION }}
+          name: FlickTV v${{ env.VERSION }}
           body: Automated release build
           files: build/app/outputs/flutter-apk/final_result.apk
           token: ${{ secrets.GITHUB_TOKEN }}

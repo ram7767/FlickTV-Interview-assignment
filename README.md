@@ -18,7 +18,7 @@ No third-party packages used — built entirely with Flutter SDK.
 
 ## Download APK
 
-[Download latest release APK](https://github.com/<!-- YOUR_GITHUB_RELEASE_APK_LINK -->)
+[Download latest release APK](https://github.com/ram7767/FlickTV-Interview-assignment/releases/latest/download/final_result.apk)
 
 ## Video Recording
 
