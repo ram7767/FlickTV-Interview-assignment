@@ -12,9 +12,9 @@
 
 ## Screen Recording
 
-> Click the thumbnail to watch the demo
+<img src="demo.gif" width="220" alt="App demo" />
 
-[![Watch Demo](https://drive.google.com/thumbnail?id=1fwuADgYPL8H0oOu487JM97v66eipsdOz&sz=w800)](https://drive.google.com/file/d/1fwuADgYPL8H0oOu487JM97v66eipsdOz/view?usp=sharing)
+[Watch full recording](https://drive.google.com/file/d/1fwuADgYPL8H0oOu487JM97v66eipsdOz/view?usp=sharing)
 
 ---
 
